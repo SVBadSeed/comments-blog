@@ -1,0 +1,119 @@
+@import "../mixin";
+
+.container {
+  background-color: #9db0ad;
+  background-size: 2000px;
+  margin: 50px 0 50px 0;
+
+  border-radius: 12px 12px 12px 12px;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+  width: 800px;
+}
+
+.form-comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 0 30px 0;
+
+  border-radius: 12px 12px 0 0;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+
+  &__title {
+    font-size: 26px;
+    font-weight: 400;
+    @include textShadow;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 15px;
+    margin: 30px 0 30px 0;
+
+    input {
+      width: 250px;
+      padding: 10px;
+      border: 2px solid #000;
+      border-radius: 15px;
+
+      margin-top: 10px;
+
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.2);
+
+      &.error {
+        background-color: rgba(222, 78, 78, 0.5);
+        border: 2px solid #cc0000;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    textarea {
+      width: 250px;
+      padding: 10px;
+      border-radius: 15px;
+      resize: none;
+      border: 2px solid #000000;
+      margin-top: 10px;
+
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.2);
+
+      &.error {
+        background-color: rgba(222, 78, 78, 0.5);
+        border: 2px solid #cc0000;
+      }
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+    input {
+      margin-top: 5px;
+      width: 120px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+
+    margin-top: 20px;
+    padding: 15px;
+
+    width: 200px;
+    border-radius: 15px;
+    color: #fff;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #000;
+
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+}
+
+.error-name {
+  color: #cc0000;
+}
+
+.error-text {
+  color: #cc0000;
+}
+
+.error-none {
+  display: none;
+}

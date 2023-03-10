@@ -1,0 +1,45 @@
+body {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #8a8a8a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a,
+span,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+}
+
+
+input {
+  background: none;
+  text-decoration: none;
+}
+
+textarea {
+  background: none;
+  text-decoration: none;
+}
